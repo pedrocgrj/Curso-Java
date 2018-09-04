@@ -22,7 +22,7 @@ public class ControleEstoque {
 		product.quantity = sc.nextInt();
 		
 		System.out.println();
-		System.out.println("product Data: " + product.toString());
+		System.out.println("product Data: " + product);
 		
 		System.out.println();
 		System.out.print("Enter teh number of products to be added in stock: ");
