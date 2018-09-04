@@ -17,10 +17,9 @@ public class Exercicio_1 {
 		rectangle.widht = sc.nextDouble();
 		rectangle.height = sc.nextDouble();
 		
-		System.out.println("AREA: " + rectangle.area());
-		System.out.println("PERIMETER: " + rectangle.perimeter());
-		System.out.println("DIAGONAL: " + rectangle.diagonal());
-		//System.out.print("Altura: "+ rectangle.height + " Largura: " + rectangle.widht);
+		System.out.printf("AREA: %.2f%n", rectangle.area());
+		System.out.printf("PERIMETER: %.2f%n", rectangle.perimeter());
+		System.out.printf("DIAGONAL: %.2f%n", rectangle.diagonal());
 		
 		sc.close();
 	}
