@@ -1,0 +1,28 @@
+package course;
+
+import java.util.Scanner;
+
+public class exercicio_4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("enter n:  ");
+		int flag = sc.nextInt();
+		while (flag < 0) {
+				System.out.printf("Enter a positive number: ");
+				flag = sc.nextInt();
+			}
+		int n = 0;
+		int higher = Integer.MIN_VALUE;
+		for (int i = 1; i <= n; i++) {
+		System.out.print("Value #" + i + ": ");
+		int x = sc.nextInt();
+		if (x > higher) {
+		higher = x;
+		}
+		}
+		System.out.println("Higher = " + higher);		sc.close();
+	
+	}
+}
