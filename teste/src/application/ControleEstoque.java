@@ -18,7 +18,10 @@ public class ControleEstoque {
 		double price = sc.nextDouble();
 		
 		Product product = new Product(name, price);
-		
+		product.setName("computer");
+		System.out.println("novo nome: " + product.getName());
+		product.setPrice(1600);
+		System.out.println("novo preço: " + product.getPrice());
 		System.out.println();
 		System.out.println("product Data: " + product);
 		
