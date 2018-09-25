@@ -6,23 +6,20 @@ public class Account {
 	private String nome;
 	private double saldo;
 
-	public Account(int numeroConta, String nome, double saldo) {
-		this.numeroConta = numeroConta;
-		this.nome = nome;
-		this.saldo = saldo;
-	}
-
 	public Account(int numeroConta, String nome) {
 		this.numeroConta = numeroConta;
 		this.nome = nome;
 	}
+	
+	public Account(int numeroConta, String nome, double saldoInicial) {
+		this.numeroConta = numeroConta;
+		this.nome = nome;
+		adicionaSaldo(saldoInicial);
+	}
+
 
 	public int getNumeroConta() {
 		return numeroConta;
-	}
-
-	public void setNumeroConta(int numeroConta) {
-		this.numeroConta = numeroConta;
 	}
 
 	public String getNome() {
@@ -41,14 +38,10 @@ public class Account {
 		this.saldo += saldo;
 	}
 
-	public void taxaSaldo() {
-		this.saldo -= 5.00;
-	}
-
 	public void removeSaldo(double saldo) {
-		this.saldo -= saldo;
-		taxaSaldo();
+		this.saldo -= saldo + 5.0;
 	}
+	
 
 	public String toString() {
 		return "Account " 
