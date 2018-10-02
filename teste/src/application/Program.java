@@ -65,7 +65,7 @@ public class Program {
 				System.out.println("Larger area: Y");
 			}*/
 		
-			System.out.print("Enter radius: ");
+			/*System.out.print("Enter radius: ");
 			double radius = sc.nextDouble();
 			
 			double c = Calculator.circumference(radius);
@@ -73,7 +73,18 @@ public class Program {
 			
 			System.out.printf("Circumference: %.2f%n",c);
 			System.out.printf("Volume: %.2f%n",v);
-			System.out.printf("PI Value: %.2f%n",Calculator.PI);
+			System.out.printf("PI Value: %.2f%n",Calculator.PI);*/
+		
+		//trabalhando com vetores
+		String[] vect = new String[] {"Maria", "Bob","Alex"};
+		
+		for (int i = 0; i<vect.length; i++) {
+				System.out.println(vect[i]);				
+			}
+		System.out.println("==================");
+		for (String obj : vect) {
+			System.out.println(obj);
+		}
 		
 		sc.close();
 	}
